@@ -1,0 +1,1188 @@
+:root{
+    --pitch:#C4A586;
+    --black:  #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin-top: 20px;
+}
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+header nav .nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .nav_wrapper ul{
+    display: flex;
+    gap: 45px;
+}
+
+header nav .nav_wrapper ul li{
+    list-style: none;
+}
+
+header nav .nav_wrapper ul li a{
+    text-decoration: none;
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2%;
+    color: #000000;
+    position: relative;
+    transition: .4s;
+}
+
+header nav .nav_wrapper ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    bottom: -30%;
+    left: 0%;
+    transition: .4s;
+}
+
+header nav .nav_wrapper ul li a:hover::after{
+    width: 100%;
+}
+
+header nav .nav_wrapper ul li .active::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    bottom: -30%;
+    left: 0%;
+    transition: .4s;
+}
+
+header nav .nav_wrapper ol{
+    display: flex;
+    gap: 33px;
+}
+
+header nav .nav_wrapper ol li{
+    list-style: none;
+    position: relative;
+}
+
+header nav .nav_wrapper ol .delete::after{
+     content: "";
+     width: 17px;
+     height: 17px;
+     border-radius: 50%;
+     background: #FE0303;
+     position: absolute;
+     top: -15px;
+     right: -4;
+}
+
+
+/* ============================ =============== nav end =================================== */
+
+/* ============================================ banner start ============================== */
+
+#banner .banner_wrapper{
+    display: flex;
+    margin-top: 72px;
+}
+
+
+#banner .bleft{
+    width: 60%;
+}
+
+#banner .bright{
+    width: 40%;
+}
+
+#banner .banner_wrapper .bleft h2{
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-size: 65px;
+    letter-spacing: 2%;
+    line-height: 76px;
+    color: #292019;
+}
+
+#banner .banner_wrapper .bleft p{
+    width: 394px;
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2%;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 43px;
+}
+
+#banner .banner_wrapper .bleft p span{
+  margin-top: 65px;
+  display: inline-block;
+}
+
+#banner .banner_wrapper .bleft a{
+    padding: 30px 70px;
+    color: #FFFFFF;
+    background: #C4A586;
+    text-decoration: none; font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 27px;
+    letter-spacing: 2%;
+    display: inline-block;
+    margin-top: 43px;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+
+#banner .banner_wrapper .bleft a:hover{
+    border: 1px solid #C4A586;
+    background: transparent;
+    color: #C4A586;   
+}
+
+#banner .banner_wrapper .bleft .wbtn{
+   margin-left: 30px;
+}
+
+/* ============================================ banner end ============================== */
+
+/* ============================================ CLIENTS start ============================ */
+#CLIENTS ul{
+    display: flex;
+    gap: 170px;
+}
+
+#CLIENTS h5{
+    text-align: center;
+    margin-top: 205px;
+    margin-bottom: 96px;
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 2%;
+    color: #000000;
+}
+
+
+#CLIENTS ul li{
+    list-style: none;;
+}
+
+#CLIENTS ul li a{
+    text-decoration: none;
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 2%;
+    color: #72696A;
+   
+}
+
+/* ============================================ CLIENTS end ============================ */
+
+
+/* =========================================== HouseProduct start  ================================ */
+
+#HouseProduct{
+    display: flex;
+    margin-top: 78px;
+}
+
+
+#HouseProduct .left{
+    width: 46%;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 52px;
+}
+
+#HouseProduct .right{
+    width: 54%;
+    background: #C4A586;
+    display: flex;
+    align-items: center;
+    padding-bottom: 52px;
+}
+
+#HouseProduct .left .text_area{
+    margin-right: 170px;
+}
+
+#HouseProduct .right .text_area{
+    padding-right: 260px;
+    padding-left: 115px;
+}
+
+#HouseProduct .left .text_area h5{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2%;
+    color: #000000;
+}
+
+#HouseProduct .left .text_area p{
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2%;
+    color: #C4A586;
+    margin-top: 41px;
+}
+
+#HouseProduct .left .picture_area{
+    margin-right: 85px;
+}
+
+#HouseProduct .right .picture_area{
+    padding-right: 60px;
+    padding-top: 43px;
+}
+
+
+
+#HouseProduct .right .text_area h5{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2%;
+    color: #000000;
+}
+
+#HouseProduct .right .text_area p{
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2%;
+    color: #72696A;
+    padding-top: 41px;
+}
+
+
+/* =========================================== HouseProduct end  ================================ */
+
+/* =============================================== Products start ================================ */
+
+#Products{
+    margin-top: 154px;
+}
+
+#Products .p_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Products .p_wrapper ul{
+    display: flex;
+    
+}
+
+#Products .p_wrapper ul li{
+   list-style: none;
+   margin-top: 42px;
+
+}
+
+#Products .p_wrapper ul li a{
+   text-decoration: none;
+   margin-top: 196px;
+   font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2%;
+    color: #000000;
+    margin-left: 210px;
+ }
+
+#Products .p_wrapper h2{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 2%;
+    color: #000000;
+}
+
+
+#Products .p_wrapper h5{
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2%;
+    color: #C4A586;
+    margin-top: 49px;
+    margin-right: 148px;
+}
+
+
+
+#Products .c_wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 113px;
+}
+
+
+
+#Products .left{
+    width: 402px;
+    height: 302px;
+    background: rgba(196, 165, 134, 63%);
+    position: relative;
+}
+
+
+#Products .c_wrapper .left h3{
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2%;
+    line-height: 76%;
+    color: #000000;
+    position: absolute;
+    top: 75px;
+    left: 70px;
+}
+
+#Products .c_wrapper .left h4{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2%;
+    color: #000000;
+    position: absolute;
+    top: 115px;
+    left: 130px;
+}
+
+
+#Products .c_wrapper .left h5{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2%;
+    color: #72696A;
+    position: absolute;
+    top: 115px;
+    left: 225px;
+}
+
+
+
+
+
+
+#Products .c_wrapper .left .Addtocart{
+    width: 208px;
+    height: 68px;
+    background:#D1A070;
+    border-radius: 25px;
+    position: absolute;
+    top: -35px;
+    left: 90px; 
+}
+
+#Products .c_wrapper .left .Addtocart p{
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2%;
+    color: #000000;
+    padding-left: 39px;
+    padding-top: 24px;
+}
+
+#Products .c_wrapper .left .Addtocart img{
+   position: absolute;
+   top: 22px;
+   right: 36px;
+}
+
+
+
+
+#Products .c_wrapper .Limagebox{
+    position: absolute;
+    top: 150px;
+    left: 60px;
+}
+
+
+#Products .middle{
+    width: 402px;
+    height: 302px;
+    background: rgba(196, 165, 134, 63%);
+    margin-top: 40px;
+    position: relative;
+}
+
+
+#Products .c_wrapper .middle h3{
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2%;
+    line-height: 76%;
+    color: #000000;
+    position: absolute;
+    top: 75px;
+    left: 70px;
+}
+
+#Products .c_wrapper .middle h4{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2%;
+    color: #000000;
+    position: absolute;
+    top: 115px;
+    left: 130px;
+}
+
+
+#Products .c_wrapper .middle h5{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2%;
+    color: #72696A;
+    position: absolute;
+    top: 115px;
+    left: 225px;
+}
+
+
+
+#Products .c_wrapper .middle .Addtocart{
+    width: 208px;
+    height: 68px;
+    background:#D1A070;
+    border-radius: 25px;
+    position: absolute;
+    top: -35px;
+    left: 90px; 
+}
+
+#Products .c_wrapper .middle .Addtocart p{
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2%;
+    color: #000000;
+    padding-left: 39px;
+    padding-top: 24px;
+}
+
+#Products .c_wrapper .middle .Addtocart img{
+   position: absolute;
+   top: 22px;
+   right: 36px;
+}
+
+
+#Products .c_wrapper .Mimagebox{
+    position: absolute;
+    top: 120px;
+    left: 85px;
+}
+
+
+
+
+
+#Products .right{
+    width: 411px;
+    height: 328px;
+    background: rgba(196, 165, 134, 63%);
+    margin-top: 40px;
+    position: relative;
+}
+
+
+#Products .c_wrapper .right h3{
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2%;
+    line-height: 76%;
+    color: #000000;
+    position: absolute;
+    top: 75px;
+    left: 70px;
+}
+
+#Products .c_wrapper .right h4{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2%;
+    color: #000000;
+    position: absolute;
+    top: 115px;
+    left: 130px;
+}
+
+
+#Products .c_wrapper .right h5{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2%;
+    color: #72696A;
+    position: absolute;
+    top: 115px;
+    left: 225px;
+}
+
+
+
+
+#Products .c_wrapper .right .Addtocart{
+    width: 208px;
+    height: 68px;
+    background:#D1A070;
+    border-radius: 25px;
+    position: absolute;
+    top: -35px;
+    left: 90px; 
+}
+
+#Products .c_wrapper .right .Addtocart p{
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2%;
+    color: #000000;
+    padding-left: 39px;
+    padding-top: 24px;
+}
+
+#Products .c_wrapper .right .Addtocart img{
+   position: absolute;
+   top: 22px;
+   right: 36px;
+}
+
+
+#Products .c_wrapper .Rimagebox{
+    position: absolute;
+    top: 167px;
+    left: 100px;
+}
+
+/* =============================================== Products end ================================ */
+
+/* ================================================ second part ==================================== */
+
+#secondpart .s_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#secondpart .left{
+    width: 402px;
+    height: 302px;
+    background: rgba(196, 165, 134, 60%);
+    margin-top: 230px; 
+    position: relative; 
+}
+
+#secondpart .left h3{
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2%;
+    line-height: 76%;
+    color: #000000;
+    position: absolute;
+    top: 75px;
+    left: 70px;
+}
+
+#secondpart .left h4{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2%;
+    color: #000000;
+    position: absolute;
+    top: 115px;
+    left: 130px;
+}
+
+#secondpart .left h5{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2%;
+    color: #72696A;
+    position: absolute;
+    top: 115px;
+    left: 225px;
+}
+
+#secondpart .left .cardpart{
+    width:208px ;
+    height:68px ;
+    background: #D1A070;
+    border-radius: 25px;
+    position: absolute;
+    top: -35px;
+    left: 90px;
+}
+
+#secondpart .left .cardpart p{
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2%;
+    color: #000000;
+    padding-left: 39px;
+    padding-top: 24px;
+} 
+
+#secondpart .left .cardpart .simg{
+    position: absolute;
+    top: 22px;
+    right: 36px;
+}
+
+#secondpart .left .limg{
+    position: absolute;
+    top: 150px;
+    left: 60px;
+}
+
+
+
+
+
+
+#secondpart .s_wrapper .middle{
+    width: 405px;
+    height: 314px;
+    background: rgba(196, 165, 134, 63%);
+    margin-top: 310px;
+    position: relative;
+}
+
+
+#secondpart .middle{
+    width: 402px;
+    height: 302px;
+    background: rgba(196, 165, 134, 60%);
+    margin-top: 230px; 
+    position: relative; 
+}
+
+#secondpart .middle h3{
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2%;
+    line-height: 76%;
+    color: #000000;
+    position: absolute;
+    top: 75px;
+    left: 70px;
+}
+
+#secondpart .middle h4{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2%;
+    color: #000000;
+    position: absolute;
+    top: 115px;
+    left: 130px;
+}
+
+#secondpart .middle h5{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2%;
+    color: #72696A;
+    position: absolute;
+    top: 115px;
+    left: 225px;
+}
+
+#secondpart .middle .cardpart{
+    width:208px ;
+    height:68px ;
+    background: #D1A070;
+    border-radius: 25px;
+    position: absolute;
+    top: -35px;
+    left: 90px;
+}
+
+#secondpart .middle .cardpart p{
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2%;
+    color: #000000;
+    padding-left: 39px;
+    padding-top: 24px;
+} 
+
+#secondpart .middle .cardpart .simg{
+    position: absolute;
+    top: 22px;
+    right: 36px;
+}
+
+#secondpart .middle .mimg{
+    position: absolute;
+    top: 155px;
+    left: 100px;
+}
+
+
+
+#secondpart .s_wrapper .right{
+    width: 402px;
+    height: 302px;
+    background: rgba(196, 165, 134, 63%);
+    margin-top: 285px;
+    position: relative;
+   
+}
+
+#secondpart .right h3{
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2%;
+    line-height: 76%;
+    color: #000000;
+    position: absolute;
+    top: 75px;
+    left: 70px;
+}
+
+#secondpart .right h4{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2%;
+    color: #000000;
+    position: absolute;
+    top: 115px;
+    left: 130px;
+}
+
+#secondpart .right h5{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2%;
+    color: #72696A;
+    position: absolute;
+    top: 115px;
+    left: 225px;
+}
+
+#secondpart .right .cardpart{
+    width:208px ;
+    height:68px ;
+    background: #D1A070;
+    border-radius: 25px;
+    position: absolute;
+    top: -35px;
+    left: 90px;
+}
+
+#secondpart .right .cardpart p{
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2%;
+    color: #000000;
+    padding-left: 39px;
+    padding-top: 24px;
+} 
+
+#secondpart .right .cardpart .simg{
+    position: absolute;
+    top: 22px;
+    right: 36px;
+}
+
+#secondpart .right .rimg{
+    position: absolute;
+    top: 120px;
+    left: 85px;
+}
+
+
+/* ================================================ second end ==================================== */
+
+/* ================================================ customer start =============================== */
+
+#customer{
+    margin-top: 260px;
+}
+
+#customer .c_wrapper{
+    display: flex;
+   
+}
+
+#customer .left{
+    width: 40%;
+}
+
+#customer .right{
+    width: 60%;
+   position: relative;
+  
+}
+
+
+#customer .c_wrapper .right h2{
+    width: 461px;
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 55px;
+    letter-spacing: 0%;
+    color: #000000;
+    margin-left: 105px;
+    margin-top: 60px;
+}
+
+#customer .c_wrapper .right p{
+    width: 420px;
+    min-height: 164px;
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2%;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 34px;
+    margin-left: 106px;
+}
+
+#customer .c_wrapper .right h3{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2%;
+    color: #000000;
+    margin-left: 195px;
+    margin-top: 55px;
+}
+
+#customer .c_wrapper .right h5{
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 2%;
+    line-height: 76px;
+    color: #000000;
+    margin-left: 195px;
+}
+
+#customer .c_wrapper .right img{
+   margin-left: 390px;
+   margin-top: 20px;
+   position: absolute;
+   top: 422px;
+   right: 290px;
+}
+
+#customer .c_wrapper .right .arrow{
+    margin-left: 390px;
+    margin-top: 20px;
+    position: absolute;
+    top: 531px;
+    right: 40px;
+}
+
+#customer .c_wrapper .right .girls{
+    margin-left: 390px;
+    margin-top: 20px;
+    position: absolute;
+    top: 670px;
+    left: -705px;
+}
+
+/* ================================================ customer end =============================== */
+
+
+/* ================================================== Signup start ============================= */
+
+#Signup{
+    margin-top: 300px;
+}
+
+#Signup .left{
+    width: 50%; 
+    margin-top: 70px; 
+}
+
+#Signup .right{
+    width: 50%;
+  
+   
+}
+
+#Signup .Signup_wrapper{
+    display: flex;
+}
+
+#Signup .left .text_box{
+    width: 240px;
+    height: 50px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    border: 2px solid #C4A586;
+    margin-left: 35px;
+}
+
+#Signup .left h5{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2%;
+    color: #C4A586;
+    margin-top: 11px;
+    margin-left: 41px;
+}
+
+#Signup .left h2{
+    width: 349px;
+    height: 78px;
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2%;
+    line-height: 39%;
+    color: #000000;
+    margin-top: 25px;
+    margin-left: 35px;
+   
+}
+
+#Signup .left span{
+    display: inline-block;
+    margin-top: 25px;
+}
+
+#Signup .left .inputbox input{
+    width: 492px;
+    height: 78px;
+    border-radius: 13px;
+    border: none;
+    background: rgba(217, 217, 217,51%);
+    padding: 29px 26px;
+}
+
+#Signup .left .inputbox input::placeholder{
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2%;
+    color: #000000;
+}
+
+#Signup .left .inputbox{
+    position: relative;
+    margin-left: 30px;
+}
+
+#Signup .left .inputbox button{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2%;
+    background: #C4A586;
+    border: none;
+    padding: 22px 42px;
+    border-radius: 13px;
+    position: relative;
+    color: #FFFFFF;
+    position: absolute;
+    top: 5px;
+    right: 210px;
+    
+}
+
+#Signup .left .inputbox button span{
+    background: rgba(196, 165, 134, 44%);
+    border: none;
+    padding: 23px 41px;
+    border-radius: 0 13px 13px 0;
+    position: absolute;
+    top: -25px;
+    right: -75px;
+}
+
+
+#Signup .right img{
+    margin-left: 410px;
+}
+
+#Signup .right .imgtow{
+    margin-top: -76px;
+    margin-left: -35px;
+}
+
+#Signup .right .ih{
+    display: flex;
+}
+
+
+#Signup .right h4{
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 2%;
+    color: #000000;
+    margin-top: -40px;
+    margin-left: 10px;
+}
+
+/* ================================================== Signup end ============================= */
+
+/* ================================================= footer start =========================== */
+
+#footer{
+    margin-top: 114px;
+    margin-left: 35px;
+}
+
+#footer .threeitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .threeitem .listitem ul{
+    display: flex;
+    gap: 45px;
+}
+
+#footer .threeitem .listitem ul li{
+    list-style: none;
+}
+
+#footer .threeitem .listitem ul li a{
+   text-decoration: none;
+   font-family: "Gupter", serif;
+   font-weight: 700;
+   font-size: 17px;
+   letter-spacing: 2%;
+   color: #000000;
+   position: relative;
+   transition: .4s;
+}
+
+#footer .threeitem .listitem ul li .active::after{
+    width: 100%; 
+  }
+
+#footer .threeitem .listitem ul li a::after{
+   content: "";
+   width: 0;
+   height: 3px;
+   background: #000000;
+   position: absolute;
+   bottom: -10px;
+   left: 0;
+   transition: .4s;
+ }
+
+ #footer .threeitem .listitem ul li a:hover::after{
+    width: 100%;
+  }
+ 
+
+  #footer .olitem ol{
+    display: flex;
+    gap: 10px;
+  }
+
+  #footer .olitem ol li{
+    list-style: none;
+  }
+
+  #footer .olitem ol li a{
+    text-decoration: none;
+    color: #B99272;
+  }
+
+  #footer .line{
+    display: flex;
+  }
+
+  #footer .left{
+    width: 50%;
+    height: 3px;
+    background: rgba(114, 105, 106, 39%);
+    margin-top: 22px;
+    margin-bottom: 47px;
+  }
+
+  #footer .right{
+    width: 50%;
+    height: 3px;
+    background: rgba(114, 105, 106, 39%);
+    margin-top: 22px;
+    margin-bottom: 47px;
+  }
+
+
+  #footerend h3{
+    text-align: center;
+    font-family: "Gupter", serif;
+   font-weight: mixed;
+   font-size: 17px;
+   letter-spacing: 2%;
+   color: #000000;
+   margin-bottom: 38px;
+  }
+
+  #footerend h3 span{
+    color: #C4A586;
+    position: relative;
+  }
+
+  #footerend h3 span::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #C4A586;
+  }
+
+
+
+
+
+/* ================================================= footer end =========================== */
